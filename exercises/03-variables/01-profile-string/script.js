@@ -5,7 +5,7 @@
 const name = "Your name here";
 
 // TODO: Create a variable for your age
-const pieces = 20;
+const peces = 20;
 
 // TODO: Create a variable for your favorite hobby
 const hobby = "Your hobby here";
