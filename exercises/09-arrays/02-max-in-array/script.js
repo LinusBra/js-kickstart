@@ -1,14 +1,17 @@
-// Max in Array Exercise
-// Goal: Create a function that finds and returns the largest number in an array
+function findMax(numbers) {
+    
+    let max = numbers[0]
 
-// TODO: Define a function called 'findMax' that:
-// - Takes one parameter: numbers (an array)
-// - Finds the largest number in the array using a loop
-// - Returns the maximum value (don't print it)
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+        }
+    }
 
-// Hint: Start with let max = numbers[0]; then compare each element
+    return max;
+}
 
-// TODO: Test your function by calling it with different arrays
-// Example: console.log(findMax([3, 7, 2, 9, 1])); // Should output: 9
-
-console.log("Replace this with your solution!");
+console.log(findMax([3, 7, 2, 9, 1]));     
+console.log(findMax([15, 8, 23, 4, 16])); 
+console.log(findMax([5]));                
+console.log(findMax([-2, -8, -1, -5])); 
